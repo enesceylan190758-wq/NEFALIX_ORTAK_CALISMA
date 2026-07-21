@@ -1,0 +1,1 @@
+/* optional bundler support stub */
