@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html><head><script>window.__resources = {"./Login.dc.html": "assets/Login.dc.html", "./Dashboard.dc.html": "assets/Dashboard.dc.html", "./KurumKarti.dc.html": "assets/KurumKarti.dc.html", "./KurumListesi.dc.html": "assets/KurumListesi.dc.html", "./YeniKurum.dc.html": "assets/YeniKurum.dc.html", "./YeniLead.dc.html": "assets/YeniLead.dc.html", "./LeadListesi.dc.html": "assets/LeadListesi.dc.html", "./DinamikArama.dc.html": "assets/DinamikArama.dc.html", "./DinamikAramaHavuz.dc.html": "assets/DinamikAramaHavuz.dc.html", "./Salesline.dc.html": "assets/Salesline.dc.html", "./SonYapilanIslemler.dc.html": "assets/SonYapilanIslemler.dc.html", "./YeniRandevu.dc.html": "assets/YeniRandevu.dc.html", "./RandevuTakvim.dc.html": "assets/RandevuTakvim.dc.html", "./RandevuListe.dc.html": "assets/RandevuListe.dc.html", "./YeniSatis.dc.html": "assets/YeniSatis.dc.html", "./Kasa.dc.html": "assets/Kasa.dc.html", "./SatisListesi.dc.html": "assets/SatisListesi.dc.html", "./BakiyeListesi.dc.html": "assets/BakiyeListesi.dc.html", "./BankaOzet.dc.html": "assets/BankaOzet.dc.html", "./GelirlerListe.dc.html": "assets/GelirlerListe.dc.html", "./GiderKaydet.dc.html": "assets/GiderKaydet.dc.html", "./Giderler.dc.html": "assets/Giderler.dc.html", "./Raporlar.dc.html": "assets/Raporlar.dc.html", "./YeniTeklif.dc.html": "assets/YeniTeklif.dc.html", "./Teklifler.dc.html": "assets/Teklifler.dc.html", "./NotlarGorevler.dc.html": "assets/NotlarGorevler.dc.html", "./Faturalar.dc.html": "assets/Faturalar.dc.html", "./FirmaListesi.dc.html": "assets/FirmaListesi.dc.html", "./WhatsappPanel.dc.html": "assets/WhatsappPanel.dc.html", "./Yetki.dc.html": "assets/Yetki.dc.html", "./Ayarlar.dc.html": "assets/Ayarlar.dc.html", "./Personel.dc.html": "assets/Personel.dc.html", "./Hizmet.dc.html": "assets/Hizmet.dc.html", "./Paket.dc.html": "assets/Paket.dc.html", "./Urun.dc.html": "assets/Urun.dc.html", "./Destek.dc.html": "assets/Destek.dc.html", "./NavHeader.dc.html": "assets/NavHeader.dc.html", "./SistemTanim.dc.html": "assets/SistemTanim.dc.html", "https://unpkg.com/react@18.3.1/umd/react.production.min.js": "assets/vendor/react.production.min.js", "https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js": "assets/vendor/react-dom.production.min.js"};</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nefalix CRM</title>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+
+<script src="assets/dc-runtime.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<script src="assets/seed.js"></script>
+<script src="assets/store.js"></script>
+<style>
+  html, body { margin:0; background:#f2f2f9; }
+  a { color:#4338ca; text-decoration:none; }
+  a:hover { color:#2b2280; }
+  @keyframes nfxspin { to { transform: rotate(360deg); } }
+</style>
+</helmet>
+<div style="min-height:100vh; background:#f2f2f9;">
+  <sc-if value="{{ booting }}" hint-placeholder-val="{{ true }}">
+    <div style="min-height:100vh; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:18px; background:linear-gradient(135deg,#1c1240,#241854); color:#fff; font-family:'Segoe UI', ui-sans-serif, system-ui, -apple-system, sans-serif;">
+      <div style="width:56px; height:56px; border-radius:50%; border:5px solid rgba(255,255,255,0.18); border-top-color:#22d3ee; animation:nfxspin 0.9s linear infinite;"></div>
+      <div style="font-size:19px; font-weight:800; letter-spacing:0.3px;">Nefalix CRM</div>
+      <div style="font-size:13px; color:#c7c3f0;">Sistem yükleniyor…</div>
+    </div>
+  </sc-if>
+  <sc-if value="{{ p_Login }}" hint-placeholder-val="{{ false }}"><dc-import name="Login" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Dashboard }}" hint-placeholder-val="{{ false }}"><dc-import name="Dashboard" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_KurumKarti }}" hint-placeholder-val="{{ false }}"><dc-import name="KurumKarti" key="{{ hkKey }}" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_KurumListesi }}" hint-placeholder-val="{{ false }}"><dc-import name="KurumListesi" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_YeniKurum }}" hint-placeholder-val="{{ false }}"><dc-import name="YeniKurum" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_YeniLead }}" hint-placeholder-val="{{ false }}"><dc-import name="YeniLead" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_LeadListesi }}" hint-placeholder-val="{{ false }}"><dc-import name="LeadListesi" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_DinamikArama }}" hint-placeholder-val="{{ false }}"><dc-import name="DinamikArama" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_DinamikAramaHavuz }}" hint-placeholder-val="{{ false }}"><dc-import name="DinamikAramaHavuz" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Salesline }}" hint-placeholder-val="{{ false }}"><dc-import name="Salesline" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_SonYapilanIslemler }}" hint-placeholder-val="{{ false }}"><dc-import name="SonYapilanIslemler" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_YeniRandevu }}" hint-placeholder-val="{{ false }}"><dc-import name="YeniRandevu" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_RandevuTakvim }}" hint-placeholder-val="{{ false }}"><dc-import name="RandevuTakvim" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_RandevuListe }}" hint-placeholder-val="{{ false }}"><dc-import name="RandevuListe" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_YeniSatis }}" hint-placeholder-val="{{ false }}"><dc-import name="YeniSatis" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Kasa }}" hint-placeholder-val="{{ false }}"><dc-import name="Kasa" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_SatisListesi }}" hint-placeholder-val="{{ false }}"><dc-import name="SatisListesi" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_BakiyeListesi }}" hint-placeholder-val="{{ false }}"><dc-import name="BakiyeListesi" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_BankaOzet }}" hint-placeholder-val="{{ false }}"><dc-import name="BankaOzet" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_GelirlerListe }}" hint-placeholder-val="{{ false }}"><dc-import name="GelirlerListe" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_GiderKaydet }}" hint-placeholder-val="{{ false }}"><dc-import name="GiderKaydet" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Giderler }}" hint-placeholder-val="{{ false }}"><dc-import name="Giderler" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Raporlar }}" hint-placeholder-val="{{ false }}"><dc-import name="Raporlar" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_YeniTeklif }}" hint-placeholder-val="{{ false }}"><dc-import name="YeniTeklif" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Teklifler }}" hint-placeholder-val="{{ false }}"><dc-import name="Teklifler" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_NotlarGorevler }}" hint-placeholder-val="{{ false }}"><dc-import name="NotlarGorevler" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Faturalar }}" hint-placeholder-val="{{ false }}"><dc-import name="Faturalar" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_FirmaListesi }}" hint-placeholder-val="{{ false }}"><dc-import name="FirmaListesi" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_WhatsappPanel }}" hint-placeholder-val="{{ false }}"><dc-import name="WhatsappPanel" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Yetki }}" hint-placeholder-val="{{ false }}"><dc-import name="Yetki" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Ayarlar }}" hint-placeholder-val="{{ false }}"><dc-import name="Ayarlar" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Personel }}" hint-placeholder-val="{{ false }}"><dc-import name="Personel" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Hizmet }}" hint-placeholder-val="{{ false }}"><dc-import name="Hizmet" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Paket }}" hint-placeholder-val="{{ false }}"><dc-import name="Paket" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Urun }}" hint-placeholder-val="{{ false }}"><dc-import name="Urun" hint-size="100%,100%"></dc-import></sc-if>
+  <sc-if value="{{ p_Destek }}" hint-placeholder-val="{{ false }}"><dc-import name="Destek" hint-size="100%,100%"></dc-import></sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="">
+const PAGES = ['Login','Dashboard','KurumKarti','KurumListesi','YeniKurum','YeniLead','LeadListesi','DinamikArama','DinamikAramaHavuz','Salesline','SonYapilanIslemler','YeniRandevu','RandevuTakvim','RandevuListe','YeniSatis','Kasa','SatisListesi','BakiyeListesi','BankaOzet','GelirlerListe','GiderKaydet','Giderler','Raporlar','YeniTeklif','Teklifler','NotlarGorevler','Faturalar','FirmaListesi','WhatsappPanel','Yetki','Ayarlar','Personel','Hizmet','Paket','Urun','Destek'];
+class Component extends DCLogic {
+  state = { route: '', booted: false };
+  componentDidMount() {
+    this._onHash = () => this._sync();
+    window.addEventListener('hashchange', this._onHash);
+    const boot = () => this._sync();
+    if (window.Nefalix && window.Nefalix.ready) window.Nefalix.ready().then(boot); else boot();
+  }
+  componentWillUnmount() { if (this._onHash) window.removeEventListener('hashchange', this._onHash); }
+  _sync() {
+    const N = window.Nefalix;
+    const authed = !!(N && N.currentUser && N.currentUser());
+    let page = (N && N.currentPage) ? N.currentPage('') : '';
+    if (!page || PAGES.indexOf(page) < 0) page = authed ? 'Dashboard' : 'Login';
+    if (!authed && page !== 'Login') { location.hash = '#Login'; return; }
+    if (authed && page === 'Login') { location.hash = '#Dashboard'; return; }
+    this.setState({ route: page, booted: true });
+  }
+  renderVals() {
+    const N = window.Nefalix;
+    const page = this.state.route;
+    const vals = { booting: !this.state.booted, hkKey: (N && N.param && N.param('id')) || 'none' };
+    PAGES.forEach(p => { vals['p_' + p] = (this.state.booted && page === p); });
+    return vals;
+  }
+}
+</script>
+
+
+</body></html>
