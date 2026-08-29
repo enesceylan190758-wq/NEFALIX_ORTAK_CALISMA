@@ -15,7 +15,7 @@
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
 
 body {
   font-family: var(--font-body);
@@ -27,7 +27,9 @@ body {
 
 img { max-width: 100%; display: block; }
 
-a { text-decoration: none; color: inherit; }
+a { text-decoration: none; color: inherit; -webkit-tap-highlight-color: transparent; }
+
+button { touch-action: manipulation; }
 
 ul { list-style: none; }
 
@@ -81,7 +83,8 @@ h1, h2, h3, h4 { font-family: var(--font-head); font-weight: 700; line-height: 1
 /* Header */
 header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
-  padding: 18px 0; transition: background .3s ease, padding .3s ease, box-shadow .3s ease;
+  padding: 18px 0; padding-top: calc(18px + env(safe-area-inset-top));
+  transition: background .3s ease, padding .3s ease, box-shadow .3s ease;
 }
 header.scrolled { background: rgba(11, 15, 25, .92); backdrop-filter: blur(10px); padding: 12px 0; box-shadow: 0 4px 20px rgba(0,0,0,.3); }
 .nav-wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
@@ -98,7 +101,8 @@ header.scrolled { background: rgba(11, 15, 25, .92); backdrop-filter: blur(10px)
 
 #navToggle {
   display: none; flex-direction: column; justify-content: center; gap: 5px;
-  width: 40px; height: 40px; background: none; border: none; cursor: pointer;
+  width: 44px; height: 44px; background: none; border: none; cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 #navToggle span { width: 24px; height: 2px; background: var(--light); transition: all .3s ease; }
 
@@ -268,7 +272,7 @@ header.scrolled { background: rgba(11, 15, 25, .92); backdrop-filter: blur(10px)
 .contact-form input, .contact-form select, .contact-form textarea {
   width: 100%; padding: 14px 16px; margin-bottom: 16px; border-radius: 10px;
   border: 1px solid rgba(255,255,255,.1); background: var(--dark-2); color: var(--light);
-  font-family: var(--font-body); font-size: .95rem;
+  font-family: var(--font-body); font-size: 16px;
 }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
   outline: none; border-color: var(--primary);
@@ -289,7 +293,7 @@ header.scrolled { background: rgba(11, 15, 25, .92); backdrop-filter: blur(10px)
 
 /* Back to top */
 #backToTop {
-  position: fixed; bottom: 28px; right: 28px; width: 46px; height: 46px; border-radius: 50%;
+  position: fixed; bottom: calc(20px + env(safe-area-inset-bottom)); right: 20px; width: 46px; height: 46px; border-radius: 50%;
   background: var(--primary); color: var(--dark); display: flex; align-items: center; justify-content: center;
   font-size: 1.3rem; font-weight: 700; opacity: 0; visibility: hidden; transform: translateY(10px);
   transition: all .3s ease; z-index: 900; box-shadow: var(--shadow);
@@ -313,8 +317,9 @@ header.scrolled { background: rgba(11, 15, 25, .92); backdrop-filter: blur(10px)
   #navToggle { display: flex; }
   #nav {
     position: fixed; top: 0; right: -100%; width: min(320px, 80%); height: 100vh;
-    background: var(--dark-2); padding: 100px 32px 32px; transition: right .35s ease;
-    box-shadow: -10px 0 30px rgba(0,0,0,.4);
+    background: var(--dark-2); transition: right .35s ease;
+    box-shadow: -10px 0 30px rgba(0,0,0,.4); overflow-y: auto;
+    padding: calc(100px + env(safe-area-inset-top)) 32px calc(32px + env(safe-area-inset-bottom));
   }
   #nav.open { right: 0; }
   #nav ul { flex-direction: column; gap: 22px; }
