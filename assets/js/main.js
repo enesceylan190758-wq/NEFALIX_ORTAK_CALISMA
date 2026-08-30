@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Reveal on scroll
-  const revealEls = document.querySelectorAll('.section-head, .card, .price-card, .about-media, .about-text, .gallery-item');
+  const revealEls = document.querySelectorAll('.section-head, .card, .price-card, .about-media, .about-text, .gallery-item, .process-step, .youtube-card, .testimonial-card');
   revealEls.forEach(el => el.classList.add('reveal'));
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {

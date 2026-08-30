@@ -33,6 +33,8 @@ Aşağıdaki yer tutucuları kendi bilgilerinizle değiştirin (hepsi `index.htm
 - **Hakkımızda metni ve tecrübe yılı**: `#hakkimizda` bölümü
 - **Fiyat paketleri**: `#paketler` bölümündeki üç kart. Buradaki tutarlar (₺4.000 / ₺7.500) gerçek bir piyasa araştırmasına dayanmayan, düzeni göstermek için konmuş örnek rakamlardır — kendi maliyetlerinize (ekipman, sigorta, düzenleme süresi, ulaşım) ve bölgenizdeki rakip fiyatlarına göre mutlaka güncelleyin
 - **Portfolyo görselleri**: `#portfolyo` bölümündeki `.gallery-ph` kutularının yerine kendi fotoğraf/video önizlemelerinizi (`<img>` veya `<video>`) koyabilirsiniz
+- **YouTube kanalı**: `#videolar` bölümü ve footer'daki YouTube linki `https://www.youtube.com/@enesceylan4386` adresine bağlı; farklı bir kanal kullanacaksanız bu linki güncelleyin
+- **Referanslar**: `#referanslar` bölümündeki üç yorum kartı tamamen kurgusal örnektir — gerçek müşteri yorumlarınızla değiştirin
 
 İletişim formu şu an demo amaçlı yalnızca istemci tarafında çalışır (bir e-posta göndermez). Gerçek gönderim için Formspree, EmailJS gibi bir servis ya da kendi backend'inizi bağlamanız gerekir.
 
