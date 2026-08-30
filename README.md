@@ -1,6 +1,8 @@
 # NEFALIX_ORTAK_CALISMA
 
-Dron çekim hizmetleri için hazırlanmış, tek sayfalık, mobil uyumlu tanıtım sitesi.
+Drone çekim hizmetleri için hazırlanmış, tek sayfalık, mobil uyumlu tanıtım sitesi.
+
+> **İsim notu:** Marka adı "İSTANBUL DRONE" olarak ayarlandı. Bu, rakip site taraması sonucunda Türkiye pazarında "dron" değil "drone" yazımının standart olduğu ve İstanbul'un en yüksek arama hacmine sahip şehir olduğu bulgusuna dayanıyor (bkz. Armut, Martı Film, Dronbul, DroneStudyo gibi rakiplerin hepsi "drone" yazıyor). Farklı bir şehirde hizmet veriyorsanız `İSTANBUL` geçen tüm yerleri kendi şehrinizle değiştirin.
 
 ## Önizleme
 
@@ -28,7 +30,7 @@ assets/img/          -> Kendi fotoğraf/video görsellerinizi buraya ekleyebilir
 
 Aşağıdaki yer tutucuları kendi bilgilerinizle değiştirin (hepsi `index.html` içinde):
 
-- **Marka adı**: "ENSSKY DRON" (header ve footer'daki `.logo`)
+- **Marka adı**: "İSTANBUL DRONE" (header ve footer'daki `.logo`) ve şehir/bölge adı geçen diğer metinler
 - **İletişim bilgileri**: `#iletisim` bölümündeki telefon, e-posta, Instagram bağlantıları
 - **Hakkımızda metni ve tecrübe yılı**: `#hakkimizda` bölümü
 - **Fiyat paketleri**: `#paketler` bölümündeki üç kart. Buradaki tutarlar (₺4.000 / ₺7.500) gerçek bir piyasa araştırmasına dayanmayan, düzeni göstermek için konmuş örnek rakamlardır — kendi maliyetlerinize (ekipman, sigorta, düzenleme süresi, ulaşım) ve bölgenizdeki rakip fiyatlarına göre mutlaka güncelleyin

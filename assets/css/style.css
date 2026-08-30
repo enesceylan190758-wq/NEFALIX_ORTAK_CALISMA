@@ -356,7 +356,7 @@ header.scrolled { background: rgba(11, 15, 25, .92); backdrop-filter: blur(10px)
   .youtube-card { padding: 30px; }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1060px) {
   #navToggle { display: flex; }
   #nav {
     position: fixed; top: 0; right: -100%; width: min(320px, 80%); height: 100vh;
